@@ -1,0 +1,833 @@
+{% extends 'header.html' %}
+{% block content %}
+
+
+    <main>
+        <!-- breadcrumb area start -->
+        <div class="breadcrumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-wrap">
+                            <nav aria-label="breadcrumb">
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i></a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">shop list left sidebar</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb area end -->
+
+        <!-- page main wrapper start -->
+        <div class="shop-main-wrapper section-padding">
+            <div class="container">
+                <div class="row">
+                    <!-- sidebar area start -->
+                    <div class="col-lg-3 order-2 order-lg-1">
+                        <aside class="sidebar-wrapper">
+                            <!-- single sidebar start -->
+                            <div class="sidebar-single">
+                                <h4 class="sidebar-title">categories</h4>
+                                <div class="sidebar-body">
+                                    <ul class="shop-categories">
+                                        <li><a href="#"> Box Bag </a></li>
+                                        <li><a href="#"> Die-cut Bag </a></li>
+                                        <li><a href="#"> Tshirt Bag </a></li>
+                                        <li><a href="#"> U-Cut Bag </a></li>
+                                        <li><a href="#"> Handle Bag </a></li>
+                                        <li><a href="#"> Shopping Bag </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- single sidebar end -->
+
+                            <!-- single sidebar start -->
+<!--                            <div class="sidebar-single">-->
+<!--                                <h4 class="sidebar-title">price</h4>-->
+<!--                                <div class="sidebar-body">-->
+<!--                                    <div class="price-range-wrap">-->
+<!--                                        <div class="price-range" data-min="1" data-max="1000"></div>-->
+<!--                                        <div class="range-slider">-->
+<!--                                            <form action="#" class="d-flex align-items-center justify-content-between">-->
+<!--                                                <div class="price-input">-->
+<!--                                                    <label for="amount">Price: </label>-->
+<!--                                                    <input type="text" id="amount">-->
+<!--                                                </div>-->
+<!--                                                <button class="filter-btn">filter</button>-->
+<!--                                            </form>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                            <!-- single sidebar end -->
+
+                            <!-- single sidebar start -->
+                            <div class="sidebar-single">
+                                <h4 class="sidebar-title">Brand</h4>
+                                <div class="sidebar-body">
+                                    <ul class="checkbox-container categories-list">
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" >
+                                                <label class="custom-control-label">Al Waha Bags Tr. L.L.C</label>
+                                            </div>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- single sidebar end -->
+
+                            <!-- single sidebar start -->
+                            <div class="sidebar-single">
+                                <h4 class="sidebar-title">color</h4>
+                                <div class="sidebar-body">
+                                    <ul class="checkbox-container categories-list">
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                                <label class="custom-control-label" for="customCheck12">black</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck13">
+                                                <label class="custom-control-label" for="customCheck13">red</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck14">
+                                                <label class="custom-control-label" for="customCheck14">blue </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck11">
+                                                <label class="custom-control-label" for="customCheck11">green</label>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                                <label class="custom-control-label" for="customCheck15">pink</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck16">
+                                                <label class="custom-control-label" for="customCheck16">Customization in All Colors Available</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- single sidebar end -->
+
+                            <!-- single sidebar start -->
+                            <div class="sidebar-single">
+                                <h4 class="sidebar-title">size</h4>
+                                <div class="sidebar-body">
+                                    <ul class="checkbox-container categories-list">
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck111">
+                                                <label class="custom-control-label" for="customCheck111"> Customization in all Size Available </label>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- single sidebar end -->
+
+                            <!-- single sidebar start -->
+                            <div class="sidebar-banner">
+                                <div class="img-container">
+                                    <a href="#">
+                                        <img src="{{ url_for('static', filename='assets/img/alwaha/1561919167.jpeg') }} " alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- single sidebar end -->
+                        </aside>
+                    </div>
+                    <!-- sidebar area end -->
+
+                    <!-- shop main wrapper start -->
+                    <div class="col-lg-9 order-1 order-lg-2">
+                        <div class="shop-product-wrapper">
+                            <!-- shop product top wrap start -->
+                            <div class="shop-top-bar">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7 col-md-6 order-2 order-md-1">
+                                        <div class="top-bar-left">
+                                            <div class="product-view-mode">
+                                                <a href="#" data-target="grid-view" data-bs-toggle="tooltip" title="Grid View"><i class="fa fa-th"></i></a>
+                                                <a class="active" href="#" data-target="list-view" data-bs-toggle="tooltip" title="List View"><i class="fa fa-list"></i></a>
+                                            </div>
+<!--                                            <div class="product-amount">-->
+<!--                                                <p>Showing 1–16 of 21 results</p>-->
+<!--                                            </div>-->
+                                        </div>
+                                    </div>
+    <!--                                    <div class="col-lg-5 col-md-6 order-1 order-md-2">-->
+    <!--                                        <div class="top-bar-right">-->
+    <!--                                            <div class="product-short">-->
+    <!--                                                <p>Sort By : </p>-->
+    <!--                                                <select class="nice-select" name="sortby">-->
+    <!--                                                    <option value="trending">product name</option>-->
+    <!--                                                    <option value="sales">Name (A - Z)</option>-->
+    <!--                                                    <option value="sales">Name (Z - A)</option>-->
+    <!--                                                    <option value="rating">Price (Low &gt; High)</option>-->
+    <!--                                                    <option value="date">Rating (Lowest)</option>-->
+    <!--                                                    <option value="price-asc">Model (A - Z)</option>-->
+    <!--                                                    <option value="price-asc">Model (Z - A)</option>-->
+    <!--                                                </select>-->
+    <!--                                            </div>-->
+    <!--                                        </div>-->
+    <!--                                    </div>-->
+                                </div>
+                            </div>
+                            <!-- shop product top wrap start -->
+
+                            <!-- product item list wrapper start -->
+                            <div class="shop-product-wrap list-view row mbn-30">
+                                <!-- product single item start -->
+                                <div class="col-md-4 col-sm-6">
+                                    <!-- product grid start -->
+                                    <div class="product-item">
+                                        <figure class="product-thumb">
+                                            <a href="product-details.html">
+                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/b8.jpeg' ) }}" alt="product">
+                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/box.jpg' ) }}" alt="product">
+                                            </a>
+
+
+                                        </figure>
+                                        <div class="product-caption text-center">
+                                            <h6 class="product-name">
+                                                <a href="product-details.html">Box Bag</a>
+                                            </h6>
+
+                                        </div>
+                                    </div>
+                                    <!-- product grid end -->
+
+                                    <!-- product list item end -->
+                                    <div class="product-list-item">
+                                        <figure class="product-thumb">
+                                            <a href="product-details.html">
+                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/b8.jpeg'  ) }}" alt="product">
+                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/sky_box.jpeg' ) }}" alt="product">
+                                            </a>
+<!--                                            <div class="product-badge">-->
+<!--                                                <div class="product-label new">-->
+<!--                                                    <span>-30%</span>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+                                        </figure>
+                                        <div class="product-content-list">
+                                            <h5 class="product-name"><a href="product-details.html">Box Bag</a></h5>
+
+                                            <p>The box shape provides added stability, allowing the bag to stand upright on its own, making it convenient for packing groceries or other items. Non-woven box bags are eco-friendly alternatives to single-use plastic bags, offering a reusable and sustainable option for shopping and carrying goods.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <!-- product list item end -->
+                                </div>
+                                <!-- product single item start -->
+
+                                <!-- product single item start -->
+                                <div class="col-md-4 col-sm-6">
+                                    <!-- product grid start -->
+                                    <div class="product-item">
+                                        <figure class="product-thumb">
+                                            <a href="product-details.html">
+                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/tshirt-clr.jpg' ) }}" alt="product">
+                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/tshirtbag.jpeg' ) }}" alt="product">
+                                            </a>
+
+                                        </figure>
+                                        <div class="product-caption text-center">
+                                            <h6 class="product-name">
+                                                <a href="product-details.html">Tshirt Bags</a>
+                                            </h6>
+
+                                        </div>
+                                    </div>
+                                    <!-- product grid end -->
+
+                                    <!-- product list item end -->
+                                    <div class="product-list-item">
+                                        <figure class="product-thumb">
+                                            <a href="product-details.html">
+                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/tshirt-clr.jpg' ) }}" alt="product">
+                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/tshirtbag.jpeg' ) }}" alt="product">
+                                            </a>
+<!--                                            <div class="product-badge">-->
+<!--                                                <div class="product-label new">-->
+<!--                                                    <span>-30%</span>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+                                        </figure>
+                                        <div class="product-content-list">
+                                            <h5 class="product-name"><a href="product-details.html">Tshirt Bag</a></h5>
+
+                                            <p>Non-woven t-shirt bags are lightweight, durable, and eco-friendly alternatives to traditional plastic bags. Made from spunbond non-woven polypropylene fabric, these bags are strong enough to carry heavy items while being reusable and recyclable.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <!-- product list item end -->
+                                </div>
+                                <!-- product single item start -->
+
+                                <!-- product single item start -->
+                                <div class="col-md-4 col-sm-6">
+                                    <!-- product grid start -->
+                                    <div class="product-item">
+                                        <figure class="product-thumb">
+                                            <a href="product-details.html">
+                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/alwaha_new/b10.jpeg' ) }}" alt="product">
+                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/purple.jpeg' ) }}" alt="product">
+                                            </a>
+
+                                        </figure>
+                                        <div class="product-caption text-center">
+                                            <h6 class="product-name">
+                                                <a href="product-details.html">Die-cut Bag</a>
+                                            </h6>
+
+                                        </div>
+                                    </div>
+                                    <!-- product grid end -->
+
+                                    <!-- product list item end -->
+                                    <div class="product-list-item">
+                                        <figure class="product-thumb">
+                                            <a href="product-details.html">
+                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/alwaha_new/b10.jpeg' ) }}" alt="product">
+                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/alwaha_new/b11_resized.jpeg' ) }}" alt="product">
+                                            </a>
+
+                                        </figure>
+                                        <div class="product-content-list">
+                                            <h5 class="product-name"><a href="product-details.html">Die-cut Bag</a></h5>
+
+                                            <p>The DieCut design features handles that are cut directly into the bag material, providing a seamless and sturdy carrying solution. These bags are versatile and can be customized with various colors, sizes, and designs to suit specific needs, making them ideal for shopping, promotions, events, and more.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <!-- product list item end -->
+                                </div>
+                                <!-- product single item start -->
+
+                                <!-- product single item start -->
+                                <div class="col-md-4 col-sm-6">
+                                    <!-- product grid start -->
+                                    <div class="product-item">
+                                        <figure class="product-thumb">
+                                            <a href="product-details.html">
+                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/orang.jpg' ) }}" alt="product">
+                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/rolbag.png' ) }}" alt="product">
+                                            </a>
+
+
+
+                                        </figure>
+                                        <div class="product-caption text-center">
+                                            <h6 class="product-name">
+                                                <a href="product-details.html">Handle Bag</a>
+                                            </h6>
+
+                                        </div>
+                                    </div>
+                                    <!-- product grid end -->
+
+                                    <!-- product list item end -->
+                                    <div class="product-list-item">
+                                        <figure class="product-thumb">
+                                            <a href="product-details.html">
+                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/rolbag.png' ) }}" alt="product">
+                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/orang.jpg' ) }}" alt="product">
+                                            </a>
+
+                                        </figure>
+                                        <div class="product-content-list">
+                                            <h5 class="product-name"><a href="product-details.html">Handle Bag</a></h5>
+
+                                            <p>Non-woven handle bags are eco-friendly alternatives to traditional plastic bags. Made from spunbond polypropylene fabric, these bags are durable, reusable, and recyclable. They offer a sturdy handle for easy carrying and come in various sizes and colors.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <!-- product list item end -->
+                                </div>
+                                <!-- product single item start -->
+
+                                <!-- product single item start -->
+<!--                                <div class="col-md-4 col-sm-6">-->
+<!--                                    &lt;!&ndash; product grid start &ndash;&gt;-->
+<!--                                    <div class="product-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/b6_resized.jpg' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/j12_resized.jpg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-caption text-center">-->
+<!--                                            <h6 class="product-name">-->
+<!--                                                <a href="product-details.html">U Cut Bag</a>-->
+<!--                                            </h6>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product grid end &ndash;&gt;-->
+
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                    <div class="product-list-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/purple.jpeg' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/tshirtbag.jpeg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-content-list">-->
+<!--                                            <h5 class="product-name"><a href="product-details.html">U Cut Bag</a></h5>-->
+
+<!--                                            <p>The "U-Cut" design refers to the handles, which are die-cut in a U-shape, making them comfortable to hold and carry. These bags are widely used for shopping, promotions, and events due to their strength and environmental benefits.-->
+<!--                                            </p>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                </div>-->
+                                <!-- product single item start -->
+
+                                <!-- product single item start -->
+<!--                                <div class="col-md-4 col-sm-6">-->
+<!--                                    &lt;!&ndash; product grid start &ndash;&gt;-->
+<!--                                    <div class="product-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/tshirtbag.jpeg' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/tshirtblue.jpeg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-caption text-center">-->
+<!--                                            <h6 class="product-name">-->
+<!--                                                <a href="product-details.html">Box Bags</a>-->
+<!--                                            </h6>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product grid end &ndash;&gt;-->
+
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                    <div class="product-list-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/rolbag.png' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/pink.jpg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-content-list">-->
+<!--                                            <h5 class="product-name"><a href="product-details.html">Box Bag</a></h5>-->
+
+<!--                                            <p>The box shape provides added stability, allowing the bag to stand upright on its own, making it convenient for packing groceries or other items. Non-woven box bags are eco-friendly alternatives to single-use plastic bags, offering a reusable and sustainable option for shopping and carrying goods.-->
+<!--                                            </p>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                </div>-->
+                                <!-- product single item start -->
+
+                                <!-- product single item start -->
+<!--                                <div class="col-md-4 col-sm-6">-->
+<!--                                    &lt;!&ndash; product grid start &ndash;&gt;-->
+<!--                                    <div class="product-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/blue.jpg') }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/sky_box.jpeg') }}" alt="product">-->
+<!--                                            </a>-->
+
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-caption text-center">-->
+<!--                                            <h6 class="product-name">-->
+<!--                                                <a href="product-details.html">D Cut Bag</a>-->
+<!--                                            </h6>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product grid end &ndash;&gt;-->
+
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                    <div class="product-list-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/tshirt-clr.jpg' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/box.jpg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-content-list">-->
+<!--                                            <h5 class="product-name"><a href="product-details.html">D Cut Bag</a></h5>-->
+
+<!--                                            <p>The D design features handles that are cut directly into the bag material, providing a seamless and sturdy carrying solution. These bags are versatile and can be customized with various colors, sizes, and designs to suit specific needs, making them ideal for shopping, promotions, events, and more.-->
+<!--                                            </p>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                </div>-->
+                                <!-- product single item start -->
+
+                                <!-- product single item start -->
+<!--                                <div class="col-md-4 col-sm-6">-->
+<!--                                    &lt;!&ndash; product grid start &ndash;&gt;-->
+<!--                                    <div class="product-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/pink.jpg' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/b8.jpeg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-caption text-center">-->
+<!--                                            <h6 class="product-name">-->
+<!--                                                <a href="product-details.html">Handle Bag</a>-->
+<!--                                            </h6>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product grid end &ndash;&gt;-->
+
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                    <div class="product-list-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/tshirtbag.jpeg' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/pink.jpg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-content-list">-->
+<!--                                            <h5 class="product-name"><a href="product-details.html">Handle Bag</a></h5>-->
+
+<!--                                            <p> Handle Bag offer a versatile solution for carrying groceries, shopping items, or personal belongings. With reinforced handles, they provide added strength for heavier loads, making them a practical and environmentally conscious choice for everyday use.-->
+<!--                                            </p>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                </div>-->
+                                <!-- product single item start -->
+
+                                <!-- product single item start -->
+<!--                                <div class="col-md-4 col-sm-6">-->
+<!--                                    &lt;!&ndash; product grid start &ndash;&gt;-->
+<!--                                    <div class="product-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/alwaha_new/b5_resized.jpg' ) }} " alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/alwaha_new/b10.jpeg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-caption text-center">-->
+<!--                                            <h6 class="product-name">-->
+<!--                                                <a href="product-details.html">Tshirt Bag</a>-->
+<!--                                            </h6>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product grid end &ndash;&gt;-->
+
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                    <div class="product-list-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/alwaha_new/b10.jpeg' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/alwaha_new/j12_resized.jpg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-content-list">-->
+<!--                                            <h5 class="product-name"><a href="product-details.html">Tshirt Bag</a></h5>-->
+
+<!--                                            <p> T-shirt shape design offers convenience with comfortable handles, making them easy to carry. Non-woven t-shirt bags are not only practical but also environmentally friendly, helping to reduce plastic waste and promote sustainability.-->
+
+<!--                                            </p>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                </div>-->
+                                <!-- product single item start -->
+
+                                <!-- product single item start -->
+<!--                                <div class="col-md-4 col-sm-6">-->
+<!--                                    &lt;!&ndash; product grid start &ndash;&gt;-->
+<!--                                    <div class="product-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/alwaha_new/b7_resized.jpg' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/alwaha_new/b11_resized.jpeg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-caption text-center">-->
+<!--                                            <h6 class="product-name">-->
+<!--                                                <a href="product-details.html">U Cut Bag</a>-->
+<!--                                            </h6>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product grid end &ndash;&gt;-->
+
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                    <div class="product-list-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/alwaha_new/b10.jpeg' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/b6_resized.jpg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-content-list">-->
+<!--                                            <h5 class="product-name"><a href="product-details.html">U Cut Bag</a></h5>-->
+
+<!--                                            <p>The "U-Cut" design refers to the handles, which are die-cut in a U-shape, making them comfortable to hold and carry. These bags are widely used for shopping, promotions, and events due to their strength and environmental benefits.-->
+<!--                                            </p>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                </div>-->
+                                <!-- product single item start -->
+
+                                <!-- product single item start -->
+<!--                                <div class="col-md-4 col-sm-6">-->
+<!--                                    &lt;!&ndash; product grid start &ndash;&gt;-->
+<!--                                    <div class="product-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/blue.jpg') }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/sky_box.jpg') }}" alt="product">-->
+<!--                                            </a>-->
+
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-caption text-center">-->
+<!--                                            <h6 class="product-name">-->
+<!--                                                <a href="product-details.html">Handle Bag</a>-->
+<!--                                            </h6>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product grid end &ndash;&gt;-->
+
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                    <div class="product-list-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/b6_resized.jpg' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/pink.jpg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-content-list">-->
+<!--                                            <h5 class="product-name"><a href="product-details.html">Handle Bag</a></h5>-->
+
+<!--                                            <p>A non-woven handle bag is an eco-friendly alternative to traditional plastic bags. Made from spunbond non-woven polypropylene fabric, these bags are durable, reusable, and recyclable. They are lightweight yet strong, making them ideal for carrying groceries, books, and other everyday items..-->
+<!--                                            </p>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                </div>-->
+                                <!-- product single item start -->
+
+                                <!-- product single item start -->
+                                <!-- product single item start -->
+
+                                <!-- product single item start -->
+<!--                                <div class="col-md-4 col-sm-6">-->
+<!--                                    &lt;!&ndash; product grid start &ndash;&gt;-->
+<!--                                    <div class="product-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/tshirtbag.jpeg' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/blue.jpg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+<!--                                       ]-->
+<!--                                        </figure>-->
+<!--                                        <div class="product-caption text-center">-->
+<!--                                            <h6 class="product-name">-->
+<!--                                                <a href="product-details.html">Fusions Ladies Bag</a>-->
+<!--                                            </h6>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product grid end &ndash;&gt;-->
+
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                    <div class="product-list-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/tshirt-clr.jpg' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/pink.jpg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-content-list">-->
+<!--                                            <h5 class="product-name"><a href="product-details.html">Fusions Leather Handbags</a></h5>-->
+
+<!--                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde perspiciatis-->
+<!--                                                quod numquam, sit fugiat, deserunt ipsa mollitia sunt quam corporis ullam-->
+<!--                                                rem, accusantium adipisci officia eaque.-->
+<!--                                            </p>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                </div>-->
+                                <!-- product single item start -->
+
+                                <!-- product single item start -->
+<!--                                <div class="col-md-4 col-sm-6">-->
+<!--                                    &lt;!&ndash; product grid start &ndash;&gt;-->
+<!--                                    <div class="product-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/product/box.jpg' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/purple.jpeg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-caption text-center">-->
+<!--                                            <h6 class="product-name">-->
+<!--                                                <a href="product-details.html">Leather Ladies Bag</a>-->
+<!--                                            </h6>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product grid end &ndash;&gt;-->
+
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                    <div class="product-list-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/alwaha_new/b11_resized.jpeg' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/alwaha_new/j12_resized.jpg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-content-list">-->
+<!--                                            <h5 class="product-name"><a href="product-details.html">Leather Ladies Bag</a></h5>-->
+
+<!--                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde perspiciatis-->
+<!--                                                quod numquam, sit fugiat, deserunt ipsa mollitia sunt quam corporis ullam-->
+<!--                                                rem, accusantium adipisci officia eaque.-->
+<!--                                            </p>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                </div>-->
+                                <!-- product single item start -->
+
+                                <!-- product single item start -->
+<!--                                <div class="col-md-4 col-sm-6">-->
+<!--                                    &lt;!&ndash; product grid start &ndash;&gt;-->
+<!--                                    <div class="product-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/alwaha_new/b10.jpeg' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/black_resized.png' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-caption text-center">-->
+<!--                                            <h6 class="product-name">-->
+<!--                                                <a href="product-details.html">Quickiin Leather Bag</a>-->
+<!--                                            </h6>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product grid end &ndash;&gt;-->
+
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                    <div class="product-list-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="product-details.html">-->
+<!--                                                <img class="pri-img" src="{{ url_for('static', filename='assets/img/alwaha/alwaha_new/b7_resized.jpg' ) }}" alt="product">-->
+<!--                                                <img class="sec-img" src="{{ url_for('static', filename='assets/img/alwaha/product/tshirtblue.jpeg' ) }}" alt="product">-->
+<!--                                            </a>-->
+
+<!--                                        </figure>-->
+<!--                                        <div class="product-content-list">-->
+<!--                                            <h5 class="product-name"><a href="product-details.html">Quickiin Leather Bag</a></h5>-->
+
+<!--                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde perspiciatis-->
+<!--                                                quod numquam, sit fugiat, deserunt ipsa mollitia sunt quam corporis ullam-->
+<!--                                                rem, accusantium adipisci officia eaque.-->
+<!--                                            </p>-->
+
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; product list item end &ndash;&gt;-->
+<!--                                </div>-->
+                                <!-- product single item start -->
+
+                            </div>
+                            <!-- product item list wrapper end -->
+
+                            <!-- start pagination area -->
+                            <div class="paginatoin-area text-center">
+                                <ul class="pagination-box">
+                                    <li><a class="previous" href="#"><i class="pe-7s-angle-left"></i></a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a class="next" href="#"><i class="pe-7s-angle-right"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- end pagination area -->
+                        </div>
+                    </div>
+                    <!-- shop main wrapper end -->
+                </div>
+            </div>
+        </div>
+        <!-- page main wrapper end -->
+    </main>
+
+    <!-- Scroll to top start -->
+    <div class="scroll-top not-visible">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <!-- Scroll to Top End -->
+{% endblock %}

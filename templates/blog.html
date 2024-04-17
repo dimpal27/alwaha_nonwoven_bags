@@ -1,0 +1,303 @@
+{% extends 'header.html' %}
+{% block content %}
+
+
+    <main>
+        <!-- breadcrumb area start -->
+        <div class="breadcrumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-wrap">
+                            <nav aria-label="breadcrumb">
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i></a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Our blog</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb area end -->
+
+        <!-- blog main wrapper start -->
+        <div class="blog-main-wrapper section-padding">
+            <div class="container">
+                <div class="row">
+<!--                    <div class="col-lg-3 order-2 order-lg-1">-->
+<!--                        <aside class="blog-sidebar-wrapper">-->
+<!--                            <div class="blog-sidebar">-->
+<!--                                <h4 class="title">Search</h4>-->
+<!--                                <div class="sidebar-serch-form">-->
+<!--                                    <form action="#">-->
+<!--                                        <input type="text" class="search-field" placeholder="search here">-->
+<!--                                        <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>-->
+<!--                                    </form>-->
+<!--                                </div>-->
+<!--                            </div> &lt;!&ndash; single sidebar end &ndash;&gt;-->
+<!--                            <div class="blog-sidebar">-->
+<!--                                <h4 class="title">Categories</h4>-->
+<!--                                <ul class="blog-archive blog-category">-->
+<!--                                    <li><a href="#">Bags (10)</a></li>-->
+<!--                                    <li><a href="#">Fashion (08)</a></li>-->
+<!--                                    <li><a href="#">Handbag (07)</a></li>-->
+<!--                                    <li><a href="#">Jewelry (14)</a></li>-->
+<!--                                    <li><a href="#">Food (10)</a></li>-->
+<!--                                </ul>-->
+<!--                            </div> &lt;!&ndash; single sidebar end &ndash;&gt;-->
+<!--                            <div class="blog-sidebar">-->
+<!--                                <h4 class="title">Blog Archives</h4>-->
+<!--                                <ul class="blog-archive">-->
+<!--                                    <li><a href="#">January (10)</a></li>-->
+<!--                                    <li><a href="#">February (08)</a></li>-->
+<!--                                    <li><a href="#">March (07)</a></li>-->
+<!--                                    <li><a href="#">April (14)</a></li>-->
+<!--                                    <li><a href="#">May (10)</a></li>-->
+<!--                                </ul>-->
+<!--                            </div> &lt;!&ndash; single sidebar end &ndash;&gt;-->
+<!--                            <div class="blog-sidebar">-->
+<!--                                <h4 class="title">Recent Post</h4>-->
+<!--                                <div class="recent-post">-->
+<!--                                    <div class="recent-post-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="blog-details.html">-->
+<!--                                                <img src="{{ url_for('static', filename='assets/img/alwaha/blog/eco-blog1.jpg' ) }}" alt="blog image">-->
+<!--                                            </a>-->
+<!--                                        </figure>-->
+<!--                                        <div class="recent-post-description">-->
+<!--                                            <div class="product-name">-->
+<!--                                                <h6><a href="blog-details.html">Auctor gravida enim</a></h6>-->
+<!--                                                <p>May 10 2023</p>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="recent-post-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="blog-details.html">-->
+<!--                                                <img src="{{ url_for('static', filename='assets/img/alwaha/blog/eco-blog1.jpeg' ) }}" alt="blog image">-->
+<!--                                            </a>-->
+<!--                                        </figure>-->
+<!--                                        <div class="recent-post-description">-->
+<!--                                            <div class="product-name">-->
+<!--                                                <h6><a href="blog-details.html">Gravida auctor dnim</a></h6>-->
+<!--                                                <p>April 18 2023</p>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="recent-post-item">-->
+<!--                                        <figure class="product-thumb">-->
+<!--                                            <a href="blog-details.html">-->
+<!--                                                <img src="{{ url_for('static', filename='assets/img/alwaha/blog/blog5.jpeg' ) }}" alt="blog image">-->
+<!--                                            </a>-->
+<!--                                        </figure>-->
+<!--                                        <div class="recent-post-description">-->
+<!--                                            <div class="product-name">-->
+<!--                                                <h6><a href="blog-details.html">Enim auctor gravida</a></h6>-->
+<!--                                                <p>March 14 2023</p>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div> &lt;!&ndash; single sidebar end &ndash;&gt;-->
+<!--                            <div class="blog-sidebar">-->
+<!--                                <h4 class="title">Tags</h4>-->
+<!--                                <ul class="blog-tags">-->
+<!--                                    <li><a href="#">Bag</a></li>-->
+<!--                                    <li><a href="#">Camera</a></li>-->
+<!--                                    <li><a href="#">Computer</a></li>-->
+<!--                                    <li><a href="#">Watch</a></li>-->
+<!--                                    <li><a href="#">Fashion</a></li>-->
+<!--                                    <li><a href="#">Shoes</a></li>-->
+<!--                                </ul>-->
+<!--                            </div> &lt;!&ndash; single sidebar end &ndash;&gt;-->
+<!--                        </aside>-->
+<!--                    </div>-->
+                    <div class="col-lg-12 order-2 order-lg-2">
+                        <div class="blog-item-wrapper">
+                            <!-- blog item wrapper end -->
+                            <div class="row mbn-30">
+                                <div class="col-md-6">
+                                    <!-- blog post item start -->
+                                    <div class="blog-post-item mb-30">
+                                        <figure class="blog-thumb">
+                                            <a href="blog-details.html">
+                                                <img src="{{ url_for('static', filename='assets/img/alwaha/blog/eco-blog1.jpeg' ) }}" alt="blog image">
+                                            </a>
+                                        </figure>
+                                        <div class="blog-content">
+<!--                                            <div class="blog-meta">-->
+<!--                                                <p>14 Sep</p>-->
+<!--                                            </div>-->
+                                            <h3 class="blog-title">
+                                                <a href="blog-details.html">Environmental Impact</a>
+                                            </h3>
+                                            <p class="blog-desc">The environmental impact of plastic bags is well-documented, with millions ending up in landfills
+and oceans each year, posing a severe threat to marine life and ecosystems. Non-woven bags
+offer a solution to this problem by reducing reliance on single-use plastics and minimizing
+pollution. By choosing non-woven bags, individuals and businesses can actively contribute to
+reducing plastic waste and preserving the planet for future generations.</p>
+                                            <a href="blog-details.html" class="read-more">Read More</a>
+                                        </div>
+                                    </div>
+                                    <!-- blog post item end -->
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- blog post item start -->
+                                    <div class="blog-post-item mb-30">
+                                        <figure class="blog-thumb">
+                                            <div class="blog-carousel-2 slick-row-15 slick-arrow-style slick-dot-style">
+                                                <div class="blog-single-slide">
+                                                    <a href="blog-details.html">
+                                                        <img src="{{ url_for('static', filename='assets/img/alwaha/blog/blog.jpg' ) }}" alt="blog image">
+                                                    </a>
+                                                </div>
+                                                <div class="blog-single-slide">
+                                                    <a href="blog-details.html">
+                                                        <img src="{{ url_for('static', filename='assets/img/alwaha/blog/blog2.jpg' ) }}" alt="blog image">
+                                                    </a>
+                                                </div>
+                                                <div class="blog-single-slide">
+                                                    <a href="blog-details.html">
+                                                        <img src="{{ url_for('static', filename='assets/img/alwaha/blog/blog5.jpeg' ) }}" alt="blog image">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                        <div class="blog-content">
+<!--                                            <div class="blog-meta">-->
+<!--                                                <p>14 Sep</p>-->
+<!--                                            </div>-->
+                                            <h3 class="blog-title">
+                                                <a href="blog-details.html">Understanding Non-Woven Bags</a>
+                                            </h3>
+                                            <p class="blog-desc">Non-woven bags are made from spun-bonded polypropylene (PP) fabric, which is lightweight,
+durable, and recyclable. Unlike traditional plastic bags, which are made from petroleum-based
+materials and take centuries to decompose, non-woven bags are biodegradable and can break
+down within a few years under the right conditions. This makes them a much more sustainable
+option for everyday use.</p>
+                                            <a href="blog-details.html" class="read-more">Read More</a>
+                                        </div>
+                                    </div>
+                                    <!-- blog post item end -->
+                                </div>
+<!--                                <div class="col-md-6">-->
+<!--                                    &lt;!&ndash; blog post item start &ndash;&gt;-->
+<!--                                    <div class="blog-post-item mb-30">-->
+<!--                                        <figure class="blog-thumb ratio ratio-16x9">-->
+<!--                                            <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/501298839&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>-->
+<!--                                        </figure>-->
+<!--                                        <div class="blog-content">-->
+<!--&lt;!&ndash;                                            <div class="blog-meta">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <p>14 Sep</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            </div>&ndash;&gt;-->
+<!--                                            <h3 class="blog-title">-->
+<!--                                                <a href="blog-details.html">Loto Winner Offering Money</a>-->
+<!--                                            </h3>-->
+<!--                                            <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do eius tempor incididunt ut labore.</p>-->
+<!--                                            <a href="blog-details.html" class="read-more">Read More</a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; blog post item end &ndash;&gt;-->
+<!--                                </div>-->
+<!--                                <div class="col-md-6">-->
+<!--                                    &lt;!&ndash; blog post item start &ndash;&gt;-->
+<!--                                    <div class="blog-post-item mb-30">-->
+<!--                                        <figure class="blog-thumb ratio ratio-16x9">-->
+<!--                                            <iframe src="https://www.youtube.com/embed/WeA7edXsU40" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--                                        </figure>-->
+<!--                                        <div class="blog-content">-->
+<!--                                            <div class="blog-meta">-->
+<!--                                                <p>14 Sep</p>-->
+<!--                                            </div>-->
+<!--                                            <h3 class="blog-title">-->
+<!--                                                <a href="blog-details.html">People Willing When Money</a>-->
+<!--                                            </h3>-->
+<!--                                            <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do eius tempor incididunt ut labore.</p>-->
+<!--                                            <a href="blog-details.html" class="read-more">Read More</a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    &lt;!&ndash; blog post item end &ndash;&gt;-->
+<!--                                </div>-->
+                                <div class="col-md-6">
+                                    <!-- blog post item start -->
+                                    <div class="blog-post-item mb-30">
+                                        <figure class="blog-thumb">
+                                            <a href="blog-details.html">
+                                                <img src="{{ url_for('static', filename='assets/img/alwaha/blog/blog7.jpg' ) }}" alt="blog image">
+                                            </a>
+                                        </figure>
+                                        <div class="blog-content">
+<!--                                            <div class="blog-meta">-->
+<!--                                                <p>14 Sep</p>-->
+<!--                                            </div>-->
+                                            <h3 class="blog-title">
+                                                <a href="blog-details.html">Embracing Sustainability</a>
+                                            </h3>
+                                            <p class="blog-desc">As consumers become more conscious of their environmental footprint, the demand for
+sustainable alternatives continues to grow. Non-woven bags provide an accessible and practical
+solution for individuals and businesses looking to adopt more eco-friendly practices. By making
+the switch to non-woven bags, we can collectively reduce our reliance on plastic, minimize waste,
+
+and pave the way for a greener, healthier planet</p>
+                                            <a href="blog-details.html" class="read-more">Read More</a>
+                                        </div>
+                                    </div>
+                                    <!-- blog post item end -->
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- blog post item start -->
+                                    <div class="blog-post-item mb-30">
+                                        <figure class="blog-thumb">
+                                            <a href="blog-details.html">
+                                                <img src="{{ url_for('static', filename='assets/img/alwaha/blog/blog5_.jpeg' ) }}" alt="blog image">
+                                            </a>
+                                        </figure>
+                                        <div class="blog-content">
+<!--                                            <div class="blog-meta">-->
+<!--                                                <p>14 Sep</p>-->
+<!--                                            </div>-->
+                                            <h3 class="blog-title">
+                                                <a href="blog-details.html">Versatility and Customization</a>
+                                            </h3>
+                                            <p class="blog-desc">One of the key advantages of non-woven bags is their versatility. They come in various sizes,
+shapes, and colors, making them suitable for a wide range of applications. From grocery
+shopping and promotional events to corporate giveaways and retail packaging, non-woven bags
+can be customized to meet specific needs and branding requirements. Additionally, their sturdy
+construction allows them to be reused multiple times, further extending their lifespan and
+environmental benefits.</p>
+                                            <a href="blog-details.html" class="read-more">Read More</a>
+                                        </div>
+                                    </div>
+                                    <!-- blog post item end -->
+                                </div>
+                            </div>
+                            <!-- blog item wrapper end -->
+
+                            <!-- start pagination area -->
+                            <div class="paginatoin-area text-center">
+                                <ul class="pagination-box">
+                                    <li><a class="previous" href="#"><i class="pe-7s-angle-left"></i></a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a class="next" href="#"><i class="pe-7s-angle-right"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- end pagination area -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- blog main wrapper end -->
+    </main>
+
+    <!-- Scroll to top start -->
+    <div class="scroll-top not-visible">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <!-- Scroll to Top End -->
+
+{% endblock %}

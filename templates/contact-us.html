@@ -1,0 +1,94 @@
+{% extends 'header.html' %}
+{% block content %}
+
+    <main>
+        <!-- breadcrumb area start -->
+        <div class="breadcrumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-wrap">
+                            <nav aria-label="breadcrumb">
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i></a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">contact us</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb area end -->
+
+        <!-- google map start -->
+        <div class="map-area section-padding">
+            <div id="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.4592992640895!2d55.6469321!3d25.3101659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5f3ebc7d0dbff%3A0xddef4d093bd376ab!2sAL%20WAHA%20BAGS%20TR.%20L.L.C!5e0!3m2!1sen!2sae!4v1648719485442!5m2!1sen!2sae" style="border:0;width:100%;height:100%;" allowfullscreen="" loading="lazy"></iframe>            </div>
+        </div>
+        <!-- google map end -->
+
+        <!-- contact area start -->
+        <div class="contact-area section-padding pt-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="contact-message">
+                            <h3 class="contact-title">Tell Us Your Project</h3>
+                            <form id="contact-form" action="{{ url_for('contact') }}" method="post" class="contact-form">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <input name="first_name" placeholder="Name *" type="text" required>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <input name="phone" placeholder="Phone *" type="text" required>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <input name="email_address" placeholder="Email *" type="email" required>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <input name="contact_subject" placeholder="Subject *" type="text">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="contact2-textarea text-center">
+                                            <textarea placeholder="Message *" name="message" class="form-control2" required=""></textarea>
+                                        </div>
+                                        <div class="contact-btn">
+                                            <button class="btn btn-sqr" type="submit"><a href="/">Send Message</a></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <p class="form-messege"></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-info">
+                            <h3 class="contact-title">Contact Us</h3>
+                            <p>We offer a wide range of nonwoven bags in different sizes, styles, and designs to cater to the diverse needs of our customers. Whether it's grocery shopping, promotional events, or everyday carry, our bags provide a convenient and eco-conscious solution.</p>
+                            <ul>
+                                <li><i class="fa fa-fax"></i> Address : Warehouse 15 , opp. PAN Home Warehouse,  Sajja industrial area, Sharjah,United Arab Emirates</li>
+                                <li><i class="fa fa-envelope-o"></i> E-mail: alwahabags@gmail.com </li>
+                                <li><i class="fa fa-phone"></i> +971 508104602</li>
+                            </ul>
+<!--                            <div class="working-time">-->
+<!--                                <h6>Working Hours</h6>-->
+<!--                                <p><span>Monday – Saturday:</span>08AM – 22PM</p>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact area end -->
+    </main>
+
+    <!-- Scroll to top start -->
+    <div class="scroll-top not-visible">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <!-- Scroll to Top End -->
+
+{% endblock %}
