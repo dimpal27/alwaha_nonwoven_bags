@@ -795,7 +795,7 @@ only screen and (max-width: 767.98px) {
 }
 
 .row {
-    --bs-gutter-x: 30px;
+    --bs-gutter-x: 150px;
 }
 
 .row-0 {
